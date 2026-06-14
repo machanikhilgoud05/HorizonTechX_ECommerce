@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "Horizon TechX E-Commerce - Full Stack Web Application",
   "scripts": {
-    "install:client": "npm install --prefix client",
-    "install:server": "npm install --prefix server",
+    "install:client": "cd client && npm install",
+    "install:server": "cd server && npm install",
     "install:all": "npm run install:server && npm run install:client",
-    "build:client": "npm run build --prefix client",
-    "dev:server": "node server/server.js",
-    "dev:client": "npm run dev --prefix client",
-    "seed": "node server/seed.js",
-    "start": "node server/server.js"
+    "build:client": "cd client && npm run build",
+    "build:all": "npm run install:all && npm run build:client",
+    "dev:server": "cd server && node server.js",
+    "dev:client": "cd client && npm run dev",
+    "seed": "cd server && node seed.js",
+    "start": "cd server && node server.js"
   }
 }

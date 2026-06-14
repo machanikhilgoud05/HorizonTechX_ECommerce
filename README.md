@@ -217,11 +217,11 @@ mongodb+srv://youruser:yourpassword@cluster0.xxxxx.mongodb.net/horizontechx_ecom
    - **Runtime:** `Node`
    - **Build Command:**
      ```bash
-     npm install --prefix client && npm run build --prefix client && npm install --prefix server
+     npm run build:all
      ```
    - **Start Command:**
      ```bash
-     node server/server.js
+     npm start
      ```
    - **Instance Type:** Free
 
